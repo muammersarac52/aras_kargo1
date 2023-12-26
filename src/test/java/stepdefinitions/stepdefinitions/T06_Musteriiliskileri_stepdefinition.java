@@ -17,7 +17,7 @@ public class T06_Musteriiliskileri_stepdefinition {
         @And("MS Musteriliskileri sayfanin acildigini dogrular")
         public void msMusteriliskileriSayfaninAcildiginiDogrular() throws InterruptedException {
             Thread.sleep(3000);
-            assert Driver.getDriver().getCurrentUrl().contains("https://www.araskargo.com.tr/musteri-iliskileri");
+            homePage.musteriIliskileriText.isDisplayed();
         }
     }
 

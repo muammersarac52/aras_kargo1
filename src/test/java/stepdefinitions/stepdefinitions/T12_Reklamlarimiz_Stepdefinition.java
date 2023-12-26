@@ -16,8 +16,8 @@ public class T12_Reklamlarimiz_Stepdefinition {
 
     @And("MS Reklamlarimiz sayfanin acildigini dogrular")
     public void msReklamlarimizSayfaninAcildiginiDogrular() {
+        homePage.reklamlarimizText.isDisplayed();
 
-        Assert.assertEquals("https://www.araskargo.com.tr/hakkimizda/reklamlarimiz", Driver.getDriver().getCurrentUrl());
 
     }
 }

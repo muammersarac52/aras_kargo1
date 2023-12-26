@@ -2,6 +2,7 @@ package stepdefinitions.stepdefinitions;
 
 import io.cucumber.java.en.And;
 import pages.HomePage;
+import utilities.Driver;
 import utilities.ReusableMethods;
 
 public class T14Step {
@@ -13,6 +14,7 @@ public class T14Step {
 
     @And("MS KurumsalHizmetlerimiz sayfanin acildigini dogrular")
     public void msKurumsalHizmetlerimizSayfaninAcildiginiDogrular() {
+        Driver.getDriver().getCurrentUrl().contains("kurumsal-hizmetlerimiz");
 
     }
 }

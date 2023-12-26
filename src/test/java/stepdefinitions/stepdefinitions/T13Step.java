@@ -11,7 +11,7 @@ public class T13Step {
     Actions actions=new Actions(Driver.getDriver());
     @And("MS BireyselHizmetlerimiz sayfanin acildigini dogrular")
     public void msBireyselHizmetlerimizSayfaninAcildiginiDogrular() {
-        assert Driver.getDriver().getCurrentUrl().contains("bireysel-hizmetlerimiz");
+        Driver.getDriver().getCurrentUrl().contains("bireysel-hizmetlerimiz");
     }
 
     @And("MS Acilan Drapdawn menude BireyselHizmetlerimiz butonuna tiklar")

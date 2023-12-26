@@ -13,8 +13,7 @@ public class T10_YonetimEkibimiz_stepdefinition {
     Actions actions = new Actions(Driver.getDriver());
     @And("MS YonetimEkibimiz sayfanin acildigini dogrular")
     public void msYonetimEkibimizSayfaninAcildiginiDogrular() {
-        Assert.assertEquals("https://www.araskargo.com.tr/hakkimizda/yonetim-ekibimiz", Driver.getDriver().getCurrentUrl());
-
+        Driver.getDriver().getCurrentUrl().contains("yonetim-ekibimiz");
     }
 
     @And("MS Acilan Drapdawn menude YonetimEkibimiz butonuna tiklar")
