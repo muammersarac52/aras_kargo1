@@ -41,6 +41,14 @@ public class Driver {
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver();
                     break;
+
+
+
+
+
+
+
+
                 default:
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
@@ -61,6 +69,25 @@ public class Driver {
         driver=null;
     }
 
+
+
+
+
+
+
+
+
     public static void quitDriver() {
     }
+
+
+
+
+
+
+
+
+
+
+
 }
