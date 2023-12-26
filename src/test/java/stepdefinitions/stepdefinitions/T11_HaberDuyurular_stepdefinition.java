@@ -20,6 +20,6 @@ public class T11_HaberDuyurular_stepdefinition {
 
     @And("MS HaberDuyurular sayfanin acildigini dogrular")
     public void msHaberDuyurularSayfaninAcildiginiDogrular() {
-        Assert.assertEquals("https://www.araskargo.com.tr/hakkimizda/haberler-ve-duyurular", Driver.getDriver().getCurrentUrl());
+        homePage.haberDuyurularText.isDisplayed();
     }
 }

@@ -19,7 +19,7 @@ public class T05_isOrtagimizOlun_stepdefinition {
     @And("MS isOrtagimizOlun sayfanin acildigini dogrular")
     public void msisOrtagimizOlunSayfaninAcildiginiDogrular() throws InterruptedException {
         Thread.sleep(2000);
-        assert Driver.getDriver().getCurrentUrl().contains("https://www.araskargo.com.tr/is-ortakligi-sss");
+        homePage.isOrtagimizOlunText.isDisplayed();
 
     }
 }

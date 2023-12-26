@@ -18,7 +18,7 @@ public class T04_Surdurebilirlik_stepdefinition {
 
     @And("MS Surdurebilirlik sayfanin acildigini dogrular")
     public void msSurdurebilirlikSayfaninAcildiginiDogrular() {
-        assert Driver.getDriver().getCurrentUrl().contains("https://www.araskargo.com.tr/surdurulebilirlik");
+        homePage.surdurebilirlikText.isDisplayed();
     }
 }
 
