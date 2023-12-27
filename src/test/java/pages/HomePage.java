@@ -59,6 +59,10 @@ public class HomePage {
 
 
 
+
+
+
+
     @FindBy(xpath = "//a[@class='ng-tns-c588362358-0'][normalize-space()='Yonetim Ekibimiz']")
     public WebElement yonetimEkibimizDrapdownButon;
     @FindBy(xpath = "//*[@class='detail-pages-hero__title']")
