@@ -18,6 +18,10 @@ public class US02_StepDefs {
     @When("GC Kullanici anasayfanin acildigini dogrular")
     public void kullanici_anasayfanin_acildigini_dogrular() {
         assert Driver.getDriver().getCurrentUrl().contains("araskargo");
+
+
+
+
     }
     @When("GC Kullanici Hizmetlerinmiz basligina gelir")
     public void kullanici_hizmetlerinmiz_basligina_gelir() throws InterruptedException {
