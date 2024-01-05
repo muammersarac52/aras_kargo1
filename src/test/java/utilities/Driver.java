@@ -6,10 +6,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
-
 
     private Driver(){
 
@@ -36,26 +36,21 @@ public class Driver {
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                     break;
-
+//                case "opera":
+//                    WebDriverManager.operadriver().setup();
+//                    driver = new OperaDriver();
+//                    break;
                 case "edge":
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver();
                     break;
-
-
-
-
-
-
-
-
                 default:
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
             }
 
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         }
         return driver;
     }
@@ -69,25 +64,9 @@ public class Driver {
         driver=null;
     }
 
-
-
-
-
-
-
-
-
     public static void quitDriver() {
+        if (driver != null)
+            driver.quit();
+        driver = null;
     }
-
-
-
-
-
-
-
-
-
-
-
 }

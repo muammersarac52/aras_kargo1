@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -13,22 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="42e34be1-205b-49da-9fd7-7bdb92efccf3">
-      <console name="Connection" type="STANDARD" schema="" session="Main"><![CDATA[create table muammer
-(
-ogrencı_no char(4),
-isim varchar(20),
-soy_isim varchar(20),
-not_ortalaması real,
-kayıt_tarihi date
-)
-insert into muammer values (1234,'alı','ses',45,now() );
-
-insert into muammer values (5454,'osa','ates',32,now() );
-insert into muammer values (5432,'ase','gel',12,now() );
-insert into muammer values (5433,'veli','kos',8,now() );
-insert into muammer (isim,soy_isim) values ('alı','ses' );
-
-select * from muammer]]></console>
+      <console name="muammmer" type="STANDARD" schema="" session="Main" />
     </connection>
     <connection id="4edcd205-ddf8-492f-8c66-1fcaade31805">
       <console name="Connection 1" type="STANDARD" schema="" session="Main" />
@@ -41,14 +26,10 @@ select * from muammer]]></console>
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="42e34be1-205b-49da-9fd7-7bdb92efccf3" object-ref="consoles/Connection" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="42e34be1-205b-49da-9fd7-7bdb92efccf3">
-      <session name="Session 1" id="f568c37b-9d20-4c13-b887-ac0e0b217f85" />
-    </connection>
+    <connection id="42e34be1-205b-49da-9fd7-7bdb92efccf3" />
     <connection id="4edcd205-ddf8-492f-8c66-1fcaade31805" />
     <connection id="31c95df6-52ef-497f-b649-ef2392b08248" />
   </component>
