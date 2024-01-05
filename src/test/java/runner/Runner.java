@@ -13,12 +13,16 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml" ,
                 "rerun:target/failed_scenarios.txt",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+
         },
         monochrome=true, //raporlarin consolda okunakli sekilde cikmasi icin
         features = "./src/test/resources/features",  //features folder path
         glue = {"stepdefinitions","hooks"},//stepdefinitions path
-        tags = "@smoke",
+        tags = "@enYakinSubeler",
         dryRun = false
+
+
+
 )
 public class Runner {
 }
