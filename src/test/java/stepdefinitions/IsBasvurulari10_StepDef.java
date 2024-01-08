@@ -47,6 +47,9 @@ public class IsBasvurulari10_StepDef {
         switchToWindow(1);
         Driver.getDriver().getCurrentUrl().contains("linkedin.com/company/aras-kargo/jobs/");
     }
+
+
+
     @And("GC Kullanici kariyer.net butonuna tiklar")
     public void gcKullaniciKariyerNetButonunaTiklar() {
         clickWithTimeOut(isBasvurulari10Page.kariyernetLinkArasKargoIsBasvurulari,1);
