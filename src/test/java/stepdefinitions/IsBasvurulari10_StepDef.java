@@ -44,6 +44,9 @@ public class IsBasvurulari10_StepDef {
     }
     @When("GC Kullanici Aras Kargo Linkedin sayfasinda oldugunu dogrular")
     public void gcKullaniciArasKargoLinkedinSayfasindaOldugunuDogrular() {
+
+
+
         switchToWindow(1);
         Driver.getDriver().getCurrentUrl().contains("linkedin.com/company/aras-kargo/jobs/");
     }
@@ -60,6 +63,10 @@ public class IsBasvurulari10_StepDef {
     public void gcKullaniciSecretcvButonunaTiklar() {
         clickWithTimeOut(isBasvurulari10Page.secretcvLinkArasKargoIsBasvurulari,1);
     }
+
+
+
+
     @When("GC Kullanici Aras Kargo Secretcv  sayfasinda oldugunu dogrular")
     public void gcKullaniciArasKargoSecretcvSayfasindaOldugunuDogrular() {
         switchToWindow(1);
